@@ -9,7 +9,7 @@
 <body>
   <img src="bg-card-front.png" alt="imagen">
   <img src="bg-card-back.png" class="imagen1" >
-  <form>
+  <form id="myForm">
   <h1 class="principal">CARDHOLDER NAME</h1>
   <p class="p1"><input type="text" name="nom" maxlength="35" minlength="20" id="nombre"></p> 
   <h2 class="principal">CARD NUMBER</h2>
@@ -22,5 +22,24 @@
   <p class="cvv">000</p>
   <button class="principal" type="submit">CONFIRM</button>
   </form>
+  <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe y la página se recargue
+    
+    // Obtener los valores de los campos de entrada
+    var nombre = document.getElementById("nombre").value;
+    var tarjeta = document.getElementById("tarjeta").value;
+    var cvv = document.getElementById("cvv").value;
+    var mes = document.getElementById("mes").value;
+    var año = document.getElementById("año").value;
+    
+    // Mostrar los valores en la consola
+    console.log("Nombre:", nombre);
+    console.log("Tarjeta:", tarjeta);
+    console.log("CVV:", cvv);
+    console.log("Mes:", mes);
+    console.log("Año:", año);
+  });
+  </script>
 </body>
 </html>
