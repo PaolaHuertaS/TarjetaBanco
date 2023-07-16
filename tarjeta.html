@@ -3,16 +3,24 @@
 <html>
 <meta charset="utf-8">
 <head><link rel="stylesheet" href="index.css">
- <title>Tarjeta | Información</title>
+  <script src="index.js"></script>
+ <title>Tarjeta | Información </title>
 </head>
 <body>
+  <img src="bg-card-front.png" alt="imagen">
+  <img src="bg-card-back.png" class="imagen1" >
+  <form>
   <h1 class="principal">CARDHOLDER NAME</h1>
-  
-  <h1 class="principal">CARD NUMBER</h1>
-
-  <h1 class="principal">EXP. DATE (MM)(YY)</h1>      <h1 class="principal">CVV</h1>
-
-  <h1 class="principal">CONFIRM</h1>
-
+  <p class="p1"><input type="text" name="nom" maxlength="35" minlength="20" id="nombre"></p> 
+  <h2 class="principal">CARD NUMBER</h2>
+  <p class="p2"><input type="text" name="NUMBER" maxlength="16" minlength="16" id="tarjeta"></p> 
+  <h3 class="principal" div="info">EXP. DATE (MM)(YY)</h3>
+  <p><input type="text" name="numero"  maxlength="2" minlength="2"class="p3" id="mes"></p>
+  <p><input type="text" name="numero" class="p4" maxlength="4" minlength="4" id="año"></p>
+  <h4 class="principal">CVV</h4>
+  <p><input type="text" name="numero"  maxlength="3" minlength="3" class="p5" id="cvv"></p>
+  <p class="cvv">000</p>
+  <button class="principal" type="submit">CONFIRM</button>
+  </form>
 </body>
 </html>
