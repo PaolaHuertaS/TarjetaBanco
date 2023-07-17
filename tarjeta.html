@@ -11,7 +11,7 @@
   <img src="bg-card-back.png" class="imagen1" >
   <form id="myForm">
   <h1 class="principal">CARDHOLDER NAME</h1>
-  <p class="p1"><input type="text" name="nom" maxlength="35" minlength="20" id="nombre"></p> 
+  <p class="p1"><input type="text" name="nom" maxlength="35" minlength="20" id="nombre" onInput="getValue()"></p> 
   <h2 class="principal">CARD NUMBER</h2>
   <p class="p2"><input type="text" name="NUMBER" maxlength="16" minlength="16" id="tarjeta"></p> 
   <h3 class="principal" div="info">EXP. DATE (MM)(YY)</h3>
@@ -22,7 +22,7 @@
   <p class="cvv">000</p>
   <button class="principal" type="submit">CONFIRM</button>
   </form>
-  <script>
+  <script class="inf">
     document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que el formulario se envíe y la página se recargue
     
@@ -39,6 +39,14 @@
     console.log("CVV:", cvv);
     console.log("Mes:", mes);
     console.log("Año:", año);
+    
+    function getValue(){
+      let txt = document.getElementById("nombre");
+      let txtValue = txtValue;
+      let result = document.getElementById("result");
+      result.innerText = txtValue;     
+    }
+    document.getElementById("myForm").reset();
   });
   </script>
 </body>
