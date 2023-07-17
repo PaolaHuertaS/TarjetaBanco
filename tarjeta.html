@@ -1,5 +1,4 @@
 <!DOCTYPE html5>
-<!DOCTYPE html5> 
 <html>
 <meta charset="utf-8">
 <head><link rel="stylesheet" href="index.css">
@@ -11,7 +10,7 @@
   <img src="bg-card-back.png" class="imagen1" >
   <form id="myForm">
   <h1 class="principal">CARDHOLDER NAME</h1>
-  <p class="p1"><input type="text" name="nom" maxlength="35" minlength="20" id="nombre" onInput="getValue()"></p> 
+  <p class="p1"><input type="text" name="nom" maxlength="35" minlength="20" id="nombre" onInput="getValue()" readonly></p> 
   <h2 class="principal">CARD NUMBER</h2>
   <p class="p2"><input type="text" name="NUMBER" maxlength="16" minlength="16" id="tarjeta"></p> 
   <h3 class="principal" div="info">EXP. DATE (MM)(YY)</h3>
@@ -21,8 +20,9 @@
   <p><input type="text" name="numero"  maxlength="3" minlength="3" class="p5" id="cvv"></p>
   <p class="cvv">000</p>
   <button class="principal" type="submit">CONFIRM</button>
+  <span id="result"></span>
   </form>
-  <script class="inf">
+  <script>
     document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que el formulario se envíe y la página se recargue
     
@@ -40,14 +40,17 @@
     console.log("Mes:", mes);
     console.log("Año:", año);
     
-    function getValue(){
-      let txt = document.getElementById("nombre");
-      let txtValue = txtValue;
-      let result = document.getElementById("result");
-      result.innerText = txtValue;     
-    }
     document.getElementById("myForm").reset();
   });
+  </script>
+  <div id="result" class="resultado"></div>
+  <script>
+    function getValue(){
+      let nombre = document.getElementById("nombre");
+      let nombreValue = nombre.value;
+      let result = document.getElementById("result");
+      result.innerText = nombreValue;     
+    }
   </script>
 </body>
 </html>

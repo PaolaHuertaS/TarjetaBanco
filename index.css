@@ -74,3 +74,17 @@ img{
 .p5 { 
     position: absolute; top: 800 px; left: 1090px; right: 230px; bottom: 130px;
 }
+
+/*.result {
+    color:antiquewhite; 
+    font-family: "Space Grotesk";
+    position: absolute; top: 120px ; left: 200px; right: 300px;bottom: 410px;
+}
+*/
+
+#result {
+    font-family: "Space Grotesk";
+    position: absolute; top: 120px ; left: 250px; right: 300px;bottom: 210px;
+    font-size: 20px;
+    color: white;
+  }
