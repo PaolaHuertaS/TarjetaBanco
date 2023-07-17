@@ -14,24 +14,24 @@ html{
 }
 
 h1 {
-    position: absolute; top: 800 px; left: 800px; right: 150px; bottom: 350px;
+    position: absolute; top: 140px; left: 800px; right: 150px; bottom: 350px;
    
 }
 
 h2 {
-    position: absolute; top: 800 px; left: 670px; right: 150px; bottom: 250px;
+    position: absolute; top: 240px; left: 670px; right: 150px; bottom: 250px;
 }
 
 h3 {
-    position: absolute; top: 800 px; left: 685px; right: 150px; bottom: 150px;
+    position: absolute; top: 320px; left: 685px; right: 150px; bottom: 150px;
 }
 
 h4 {
-    position: absolute; top: 800 px; left: 990px; right: 150px; bottom: 150px;
+    position: absolute; top: 320px; left: 990px; right: 150px; bottom: 150px;
 }
 
 button {
-    position: absolute; top: 800 px; left: 865px; right: 150px; bottom: 50px;
+    position: absolute; top: 400px; left: 865px; right: 150px; bottom: 230px;
     background-color: purple;
     color: antiquewhite ;
     letter-spacing: 2px;
@@ -56,23 +56,23 @@ img{
 }
 
 .p1 {
-    position: absolute; top: 800 px; left: 860px; right: 150px; bottom: 310px;
+    position: absolute; top: 190px; left: 860px; right: 150px; bottom: 310px;
 }
 
 .p2 {
-    position: absolute; top: 800 px; left: 860px; right: 150px; bottom: 200px;
+    position: absolute; top: 280px; left: 860px; right: 150px; bottom: 200px;
 }
 
 .p3{
-    position: absolute; top: 800 px; left: 865px; right: 450px; bottom: 130px;
+    position: absolute; top: 360px; left: 865px; right: 450px; bottom: 290px;
 }
 
 .p4 {
-    position: absolute; top: 800 px; left: 925px; right: 400px; bottom: 130px;
+    position: absolute; top: 360px; left: 925px; right: 400px; bottom: 290px;
 }
 
 .p5 { 
-    position: absolute; top: 800 px; left: 1090px; right: 230px; bottom: 130px;
+    position: absolute; top: 360px; left: 1090px; right: 130px; bottom: 290px;
 }
 
 #result {
@@ -84,28 +84,28 @@ img{
 
 #result1{
     font-family: "Space Grotesk";
-    position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 310px;
+    position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 210px;
     font-size: 20px;
     color: white;
 }
 
 #result2 {
     font-family: "Space Grotesk";
-    position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 310px;
+    position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 190px;
     font-size: 20px;
     color: white;
 }
 
 #result3 {
     font-family: "Space Grotesk";
-    position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 310px;
+    position: absolute; top: 120px ; left: 300px; right: 320px; bottom: 190px;
     font-size: 20px;
     color: white;
 }
 
 #result4 {
     font-family: "Space Grotesk";
-    position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 310px;
+    position: absolute; top: 500px; left: 600px; right: 300px; bottom: 410px;
     font-size: 20px;
-    color: white;
+    color: white ;
 }
