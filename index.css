@@ -5,29 +5,26 @@
 html{
     background-image: url("bg-main-desktop.png");
     background-repeat: no-repeat;
-    background-position: left;
+    background-size: 600px;
     font-weight: 500;
-}
-.principal {
     font-family: "Space Grotesk";
-    text-align: center;
 }
 
-h1 {
-    position: absolute; top: 140px; left: 800px; right: 150px; bottom: 350px;
+.l1 {
+    position: absolute; top: 140px; left: 860px; right: 150px; bottom: 350px;
    
 }
 
-h2 {
-    position: absolute; top: 240px; left: 670px; right: 150px; bottom: 250px;
+.l2 {
+    position: absolute; top: 240px; left: 860px; right: 150px; bottom: 250px;
 }
 
-h3 {
-    position: absolute; top: 320px; left: 685px; right: 150px; bottom: 150px;
+.l3 {
+    position: absolute; top: 320px; left: 860px; right: 150px; bottom: 150px;
 }
 
-h4 {
-    position: absolute; top: 320px; left: 990px; right: 150px; bottom: 150px;
+.l4 {
+    position: absolute; top: 320px; left: 1090px; right: 150px; bottom: 150px;
 }
 
 button {
@@ -75,37 +72,10 @@ img{
     position: absolute; top: 360px; left: 1090px; right: 130px; bottom: 290px;
 }
 
+
 #result {
     font-family: "Space Grotesk";
     position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 310px;
     font-size: 20px;
     color: white;
-  }
-
-#result1{
-    font-family: "Space Grotesk";
-    position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 210px;
-    font-size: 20px;
-    color: white;
-}
-
-#result2 {
-    font-family: "Space Grotesk";
-    position: absolute; top: 120px ; left: 250px; right: 320px; bottom: 190px;
-    font-size: 20px;
-    color: white;
-}
-
-#result3 {
-    font-family: "Space Grotesk";
-    position: absolute; top: 120px ; left: 300px; right: 320px; bottom: 190px;
-    font-size: 20px;
-    color: white;
-}
-
-#result4 {
-    font-family: "Space Grotesk";
-    position: absolute; top: 500px; left: 600px; right: 300px; bottom: 410px;
-    font-size: 20px;
-    color: white ;
 }

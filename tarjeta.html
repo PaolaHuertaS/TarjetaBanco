@@ -9,19 +9,20 @@
   <img src="bg-card-front.png" alt="imagen">
   <img src="bg-card-back.png" class="imagen1" >
   <form id="myForm">
-  <label class="principal">CARDHOLDER NAME</label>
+  <label class="l1">CARDHOLDER NAME</label>
   <p class="p1"><input type="text" name="nom" maxlength="30" minlength="20" id="nombre" onInput="getNombre()"></p> 
-  <label class="principal">CARD NUMBER</label>
+  <label class="l2">CARD NUMBER</label>
   <p class="p2"><input type="text" name="tarjnum" maxlength="16" minlength="16" id="tarjeta" onInput="getTarjeta()"></p> 
-  <label class="principal">EXP. DATE (MM)(YY)</label>
+  <label class="l3">EXP. DATE (MM)(YY)</label>
   <p class="p3"><input type="text" name="mesnum"  maxlength="2" minlength="2" id="mes" onInput="getMonth()"></p>
   <p class="p4"><input type="text" name="añonum"  maxlength="4" minlength="4" id="año" onInput="getYear()"></p>
-  <label class="principal">CVV</label>
+  <label class="l4">CVV</label>
   <p class="p5"><input type="text" name="cvvnum"  maxlength="3" minlength="3"  id="cvv" onInput="getCVV()"></p>
   <p class="cvv">000</p>
   <button class="principal" type="submit">CONFIRM</button>
   <span id="result"></span>
   </form>
+  <div id="result"></div>
   <script>
     document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que el formulario se envíe y la página se recargue
@@ -39,26 +40,20 @@
     console.log("CVV:", cvv);
     console.log("Mes:", mes);
     console.log("Año:", año);
-    
-    document.getElementById("myForm").reset();
-  });
-  </script>
-  <div id="result"></div>
-  <script>
-    function getNombre(){
-      let nombre = document.getElementById("nombre");
-      let nombreValue = nombre.value;
-      let result = document.getElementById("result");
-      result.innerText = nombreValue;    
-      
-       // Verificar si el valor contiene solo letras usando una expresión regular
-       if (/^[A-Za-z]+$/.test(nombreValue)) {
+
+     // Verificar si el valor contiene solo letras usando una expresión regular
+     if (/^[A-Za-z]+$/.test(nombreValue)) {
         result.innerText = nombreValue;
       } else {
         event.preventDefault(); // Evita que se ingrese el valor no deseado
         nombre.value = ''; // Borra el valor incorrecto del campo de entrada
       }
-    }
-    </script>
+
+    var result = document.getElementById("result");
+    result.innerText = "Nombre: " + nombre + "\nTarjeta: " + tarjeta + "\nCVV: " + cvv + "\nMes: " + mes + "\nAño: " + año;
+
+    document.getElementById("myForm").reset();
+  });
+  </script>
 </body> 
 </html>
