@@ -1,7 +1,7 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html>
-<meta charset="utf-8">
 <head><link rel="stylesheet" href="index.css">
+  <meta charset="utf-8">
   <script src="index.js"></script>
  <title>Tarjeta | Información </title>
 </head>
@@ -9,15 +9,15 @@
   <img src="bg-card-front.png" alt="imagen">
   <img src="bg-card-back.png" class="imagen1" >
   <form id="myForm">
-  <h1 class="principal">CARDHOLDER NAME</h1>
+  <label class="principal">CARDHOLDER NAME</label>
   <p class="p1"><input type="text" name="nom" maxlength="30" minlength="20" id="nombre" onInput="getNombre()"></p> 
-  <h2 class="principal">CARD NUMBER</h2>
-  <p class="p2"><input type="text" name="NUMBER" maxlength="16" minlength="16" id="tarjeta" onInput="getTarjeta()"></p> 
-  <h3 class="principal" div="info">EXP. DATE (MM)(YY)</h3>
-  <p class="p3"><input type="text" name="numero"  maxlength="2" minlength="2" id="mes" onInput="getMonth()"></p>
-  <p class="p4"><input type="text" name="numero"  maxlength="4" minlength="4" id="año" onInput="getYear()"></p>
-  <h4 class="principal">CVV</h4>
-  <p class="p5"><input type="text" name="numero"  maxlength="3" minlength="3"  id="cvv" onInput="getCVV()"></p>
+  <label class="principal">CARD NUMBER</label>
+  <p class="p2"><input type="text" name="tarjnum" maxlength="16" minlength="16" id="tarjeta" onInput="getTarjeta()"></p> 
+  <label class="principal">EXP. DATE (MM)(YY)</label>
+  <p class="p3"><input type="text" name="mesnum"  maxlength="2" minlength="2" id="mes" onInput="getMonth()"></p>
+  <p class="p4"><input type="text" name="añonum"  maxlength="4" minlength="4" id="año" onInput="getYear()"></p>
+  <label class="principal">CVV</label>
+  <p class="p5"><input type="text" name="cvvnum"  maxlength="3" minlength="3"  id="cvv" onInput="getCVV()"></p>
   <p class="cvv">000</p>
   <button class="principal" type="submit">CONFIRM</button>
   <span id="result"></span>
@@ -59,42 +59,6 @@
         nombre.value = ''; // Borra el valor incorrecto del campo de entrada
       }
     }
-  </script>
-   <div id="result1"></div>
-   <script>
-     function getTarjeta(){
-       let tarjeta = document.getElementById("tarjeta");
-       let tarjetaValue = tarjeta.value;
-       let result = document.getElementById("result");
-       result.innerText = tarjetaValue;     
-     }
-   </script>
-    <div id="result2"></div>
-    <script>
-      function getMonth(){
-        let mes = document.getElementById("mes");
-        let mesValue = mes.value;
-        let result = document.getElementById("result");
-        result.innerText = mesValue;     
-      }
     </script>
-     <div id="result3"></div>
-     <script>
-       function getYear(){
-         let año = document.getElementById("año");
-         let añoValue = año.value;
-         let result = document.getElementById("result");
-         result.innerText = añoValue;     
-       }
-     </script>
-      <div id="result4"></div>
-      <script>
-        function getCVV(){
-          let cvv = document.getElementById("cvv");
-          let cvvValue = cvv.value;
-          let result = document.getElementById("result");
-          result.innerText = cvvValue;     
-        }
-      </script>
-</body>
+</body> 
 </html>
